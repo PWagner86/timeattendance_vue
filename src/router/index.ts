@@ -29,8 +29,6 @@ const router = createRouter({
       name: 'Time tracking',
       component: () => import('@/views/TimeTrackingView.vue')
     }
-
-
   ]
 });
 
