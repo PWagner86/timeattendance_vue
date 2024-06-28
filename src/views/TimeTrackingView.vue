@@ -1,3 +1,3 @@
 <template>
-    <h2>TimeTrackingView</h2>
+    <h2>TimeTracking</h2>
 </template>
