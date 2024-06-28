@@ -11,25 +11,35 @@
         <Column style="min-width: 8rem;">
             <template #body="slotProps">
                 <Button icon="pi pi-pencil" outlined rounded class="mr-2" @click="editPerson(slotProps.data)" />
-                <Button icon="pi pi-trash" outlined rounded severity="danger" @click="deletePerson(slotProps.data)" />
+                <Button icon="pi pi-trash" outlined rounded severity="danger" @click="deleteEntry(slotProps.data)" />
             </template>
         </Column>
-        <template #footer>Insgesamt gibt es XY Benutzer</template>
+        <template #footer>Insgesamt gibt es {{ persons.length }} Benutzer</template>
     </DataTable>
 </template>
 
 <script setup lang="ts">
+import { getAllPerson, deletePerson } from '@/composables/usePerson';
 import type { Person } from '@/types/Person';
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 
 const persons = ref<Person[]>([]);
-persons.value.push({id: 0, username: "Test", fullName: "Test User", role: "user", password: "password"});
+
+
+onMounted(() => {
+    getAllPerson(persons);
+    // .then(res => res.json())
+    // .then(data => persons.value = data)
+    // .catch(err => console.log(err))
+})
+
 
 const editPerson = (p: Person) => {
 
 }
 
-const deletePerson = (p: Person) => {
+const deleteEntry = (p: Person) => {
+    deletePerson(p.id)
     persons.value.splice(persons.value.indexOf(p), 1);
 }
 </script>

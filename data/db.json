@@ -1,0 +1,20 @@
+{
+  "users": [
+    {"id": "6b370f79-6c50-46a8-9fdc-49de5303ad08", "username": "bbeutlin", "fullName": "Bilbo Beutlin", "role": "user", "password": "$2y$10$q1x3FWpsABbcD7muJzf9bOUYmAwpxtwrK71dG73Te26/dup/NLDEu"},
+    {"id": "9ff75d04-b65d-4455-b3cb-2ded5153e9a7", "username": "fbeutlin", "fullName": "Frodo Beutlin", "role": "user", "password": "$2y$10$euoUCUQeCRl81jPWBp44be0VI/O4PKwy/nox6Ru2gLU5VFN.oCiVm"},
+    {"id": "4f12e3b3-ce2a-42f9-b637-3e23bac5bbba", "username": "gschlangenzunge", "fullName": "Grima Schlangenzunge", "role": "pm", "password": "$2y$10$Wb2u.fu.kyLTB8V1WqTw..SAI3N2NsLz2oK.ZSDNo/6PJsg1K8dpG"},
+    {"id": "cf649769-5317-4be1-9cd4-3a62be06a0f0", "username": "tbombadil", "fullName": "Tom Bombadil", "role": "hr", "password": "$2y$10$g81yL/lhtnrzog./j5IlnubvM7eKsey2nEZm9ykhMtO0YRDA8Xu6y"}
+  ],
+  "projects": [
+    {"id": "67f6b55e-829d-4438-a58c-c2be4a3ab5f1", "name": "Reise zum Schicksalsberg", "active": true, "allowed_users": ["9ff75d04-b65d-4455-b3cb-2ded5153e9a7"]},
+    {"id": "463279e6-9b17-46e0-bd1e-0fab4c7ec144", "name": "Pause", "active": true, "allowed_users": ["6b370f79-6c50-46a8-9fdc-49de5303ad08", "9ff75d04-b65d-4455-b3cb-2ded5153e9a7"]},
+    {"id": "0d79bbb9-99a0-42aa-944e-f8e07e840156", "name": "Reise zum einsamen Berg", "active": false, "allowed_users": ["6b370f79-6c50-46a8-9fdc-49de5303ad08"]}
+  ],
+  "time_stamps": [
+    {"id": "d7b12745-16af-434d-a9b6-863c2d43ef19", "start": "2024-07-31T07:49:36", "end": "2024-07-31T12:00:36", "user": "9ff75d04-b65d-4455-b3cb-2ded5153e9a7", "project": "67f6b55e-829d-4438-a58c-c2be4a3ab5f1"},
+    {"id": "63d7c9d8-b0e2-4958-8141-1ca0743e4117", "start": "2024-07-31T12:00:36", "end": "2024-07-31T13:03:11", "user": "9ff75d04-b65d-4455-b3cb-2ded5153e9a7", "project": "463279e6-9b17-46e0-bd1e-0fab4c7ec144"},
+    {"id": "5d50431d-f6e2-4ac0-adec-a9455919a619", "start": "2024-07-31T13:03:11", "end": "2024-07-31T20:00:00", "user": "9ff75d04-b65d-4455-b3cb-2ded5153e9a7", "project": "67f6b55e-829d-4438-a58c-c2be4a3ab5f1"},
+    {"id": "f7542fb9-e164-46cf-870e-7d5b5452a529", "start": "2008-04-22T08:00:00", "end": "2008-04-22T20:00:00", "user": "6b370f79-6c50-46a8-9fdc-49de5303ad08", "project": "0d79bbb9-99a0-42aa-944e-f8e07e840156"},
+    {"id": "12556672-ab2e-4766-8fb6-d120b608ea1b", "start": "2008-04-22T20:00:00", "end": "2008-04-23T08:00:00", "user": "6b370f79-6c50-46a8-9fdc-49de5303ad08", "project": "463279e6-9b17-46e0-bd1e-0fab4c7ec144"}
+  ]
+}
