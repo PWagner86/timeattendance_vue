@@ -6,15 +6,17 @@ const baseUrl: string = `${serverUrl}/users`;
 
 // export async function getAllPerson(p: any): Promise<Response> {
 //     // return await fetch(baseUrl);
-//     const json = await fetch(baseUrl);
-//     const data = await json.json();
-//     p.value = data;
 // }
 
 export async function getAllPerson(p: Ref<Person[]>) {
-    const json = await fetch(baseUrl);
-    const data = await json.json();
-    p.value = data;
+    try {
+        const json = await fetch(baseUrl);
+        const data = await json.json();
+        p.value = data;
+    }
+    catch(err){
+        console.log(err);
+    } 
 }
 
 export async function deletePerson(personId: string): Promise<Response> {
