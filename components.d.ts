@@ -10,9 +10,12 @@ declare module 'vue' {
     Button: typeof import('primevue/button')['default']
     Column: typeof import('primevue/column')['default']
     DataTable: typeof import('primevue/datatable')['default']
-    Dropdown: typeof import('primevue/dropdown')['default']
-    PersonDataTable: typeof import('./src/components/PersonDataTable.vue')['default']
+    Dialog: typeof import('primevue/dialog')['default']
+    InputText: typeof import('primevue/inputtext')['default']
+    PersonDataDialog: typeof import('./src/components/person_data/PersonDataDialog.vue')['default']
+    PersonDataTable: typeof import('./src/components/person_data/PersonDataTable.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TabMenu: typeof import('primevue/tabmenu')['default']
   }
 }

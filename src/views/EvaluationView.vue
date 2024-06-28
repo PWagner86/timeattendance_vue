@@ -1,3 +1,3 @@
 <template>
-    <h2>EvaluationView</h2>
+    <h2>Evaluation</h2>
 </template>
